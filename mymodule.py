@@ -4,10 +4,12 @@ groupbycoy = sorteddf[['body-style','price']].groupby(sorteddf['company'])
 
 # print(list(groupbycoy))
 
-for company, grps in groupbycoy:
+for companies, grps in groupbycoy:
     print(company)
     print('----------')
     for i in grps.index:
         print(grps.value[i][0], end = ' ')
         print(grps.value[i][1])
-# wefesfefes
+
+        
+# added by liuna
